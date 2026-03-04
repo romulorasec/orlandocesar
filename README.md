@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Orlando Cesar — Design System & Website
 
-## Getting Started
+Design system e website profissional para Orlando Cesar, corretor imobiliário em Évora e Alentejo, Portugal.
 
-First, run the development server:
+## Stack
+
+- **Next.js 16** · React 19 · TypeScript
+- **Tailwind CSS 4** · CSS Variables · Design Tokens
+- **shadcn/ui** · Radix UI · CVA (class-variance-authority)
+- **DM Sans** — tipografia humanista optimizada para ecrãs
+
+## Desenvolvimento
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npm run build      # Build de produção
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estrutura
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+app/
+├── page.tsx                    Homepage
+├── globals.css                 Design tokens (cores, tipografia, sombras)
+├── layout.tsx                  Root layout (DM Sans, Header, Footer)
+├── components/                 Header, Footer
+└── styleguide/                 Documentação visual interactiva
+    ├── page.tsx                Tokens overview
+    └── components/             Showcase de cada componente
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+components/ui/                  Componentes reutilizáveis do design system
+```
 
-## Learn More
+## Style Guide
 
-To learn more about Next.js, take a look at the following resources:
+Acesse `/styleguide` para visualizar todos os tokens e componentes:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Foundation** — Cores, tipografia, sombras, spacing, border radius
+- **Forms** — Input, Checkbox, Radio, Toggle
+- **Data Display** — Button, Card, Badge
+- **Feedback** — Alert, Tooltip
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Design Tokens
 
-## Deploy on Vercel
+Todos definidos como CSS variables em `globals.css`:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Token | Light | Dark |
+|-------|-------|------|
+| Primary | `#3B588A` | `#537BA1` |
+| Secondary | `#B1E158` | `#D4E886` |
+| Accent | `#537BA1` | `#6B8DB8` |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+7 níveis de sombra · 15 tons de cinza · Suporte completo a dark mode

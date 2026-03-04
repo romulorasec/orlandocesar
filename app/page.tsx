@@ -44,7 +44,7 @@ export default function HomePage() {
 
         {/* Full-bleed photo — Ken Burns cinematic zoom */}
         <Image
-          src="/orlando-cesar-2560x1440.png"
+          src="/orlando-cesar-2560x1440-converted-from-png.webp"
           alt="Orlando Cesar — Corretor Imobiliário Évora"
           fill
           priority

@@ -1,0 +1,27 @@
+<svg width="180" height="60" viewBox="0 0 180 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon/Symbol -->
+  <g>
+    <!-- Modern House/Building Icon -->
+    <rect x="6" y="18" width="36" height="36" rx="6" fill="#3B588A" opacity="0.1"/>
+    <path d="M24 12L38 22V42C38 43.1046 37.1046 44 36 44H12C10.8954 44 10 43.1046 10 42V22L24 12Z" stroke="#3B588A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M19 44V32C19 30.8954 19.8954 30 21 30H27C28.1046 30 29 30.8954 29 32V44" stroke="#3B588A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="18" cy="24" r="1.5" fill="#3B588A"/>
+    <circle cx="30" cy="24" r="1.5" fill="#3B588A"/>
+  </g>
+  
+  <!-- Text -->
+  <g>
+    <!-- Orlando -->
+    <text x="52" y="28" font-family="'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700" fill="#1a1a1a" letter-spacing="-0.02em">
+      Orlando
+    </text>
+    <!-- Cesar -->
+    <text x="52" y="44" font-family="'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700" fill="#3B588A" letter-spacing="-0.02em">
+      Cesar
+    </text>
+    <!-- Subtitle -->
+    <text x="52" y="54" font-family="'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="400" fill="#1a1a1a" opacity="0.6" letter-spacing="0.05em">
+      CORRETOR IMOBILIÁRIO
+    </text>
+  </g>
+</svg>
