@@ -736,12 +736,12 @@ export default function HomePage() {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className={`group relative border-t border-border/35 ${i > 0 ? 'md:border-l md:border-l-border/35' : ''} py-14 px-10 cursor-default overflow-hidden`}
+                  className={`group relative border-t border-border/35 ${i > 0 ? 'md:border-l md:border-l-border/35' : ''} py-14 px-10 cursor-default overflow-hidden h-full`}
                 >
                   {/* Lime reveal top line */}
                   <div className="absolute top-[-1px] left-0 h-[2px] w-20 bg-secondary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out" />
 
-                  <div className="relative">
+                  <div className="relative h-full flex flex-col">
 
                     {/* Large decorative quote mark */}
                     <div
@@ -757,25 +757,27 @@ export default function HomePage() {
                       {item.quote}
                     </p>
 
-                    {/* Micro rule */}
-                    <div className="h-px w-6 bg-border/50 mb-8 group-hover:bg-secondary/50 group-hover:w-10 transition-all duration-400" />
+                    <div className="mt-auto">
+                      {/* Micro rule */}
+                      <div className="h-px w-6 bg-border/50 mb-8 group-hover:bg-secondary/50 group-hover:w-10 transition-all duration-400" />
 
-                    {/* Author info */}
-                    <div className="mb-8">
-                      <p className="text-[11px] font-semibold text-foreground/70 mb-1">{item.name}</p>
-                      <p className="text-[9.5px] text-muted-foreground/50 font-light">
-                        {item.property} · {item.location}
-                      </p>
-                    </div>
+                      {/* Author info */}
+                      <div className="mb-8">
+                        <p className="text-[11px] font-semibold text-foreground/70 mb-1">{item.name}</p>
+                        <p className="text-[9.5px] text-muted-foreground/50 font-light">
+                          {item.property} · {item.location}
+                        </p>
+                      </div>
 
-                    {/* Result metric */}
-                    <div className="inline-flex items-center gap-3 px-4 py-2.5 rounded-full border border-border/50 bg-muted/30 group-hover:border-secondary/45 group-hover:bg-secondary/[0.07] transition-all duration-300">
-                      <span className="text-[1.1rem] font-bold text-foreground/65 group-hover:text-foreground transition-colors duration-200 leading-none">
-                        {item.metric}
-                      </span>
-                      <span className="text-[9px] uppercase tracking-[0.18em] font-semibold text-muted-foreground/50 group-hover:text-foreground/55 transition-colors duration-200">
-                        {item.metricLabel}
-                      </span>
+                      {/* Result metric */}
+                      <div className="inline-flex items-center gap-3 px-4 py-2.5 rounded-full border border-border/50 bg-muted/30 group-hover:border-secondary/45 group-hover:bg-secondary/[0.07] transition-all duration-300">
+                        <span className="text-[1.05rem] font-semibold text-foreground/60 group-hover:text-foreground/80 transition-colors duration-200 leading-none">
+                          {item.metric}
+                        </span>
+                        <span className="text-[9px] uppercase tracking-[0.18em] font-semibold text-muted-foreground/50 group-hover:text-foreground/55 transition-colors duration-200">
+                          {item.metricLabel}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
