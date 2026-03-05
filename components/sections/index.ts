@@ -1,0 +1,6 @@
+export { HeroSection } from './hero'
+export { ManifestoSection } from './manifesto'
+export { ProcessoSection } from './processo'
+export { PromiseCardsSection } from './promise-cards'
+export { TestimonialsSection } from './testimonials'
+export { CTAFinalSection } from './cta-final'
