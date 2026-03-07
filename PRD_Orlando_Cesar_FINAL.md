@@ -67,13 +67,13 @@ Orlando não vende imóveis. Orlando vende **paz de espírito através de clarez
 **Objetivo**: Proprietários frustrados reconhecem-se, entendem o processo, clicam em "Avaliação"
 
 **Seções**:
-1. Hero: "Seu imóvel merecia estar vendido (com alguém confiável)"
-2. Por Que Orlando?: Empatia + Competência + Transparência
-3. 5 Passos do Processo (preview visual)
-4. Cases de Sucesso (video testimonials reais)
-5. Calculadora (lead magnet - "Descubra o valor seu imóvel")
-6. O Que Esperar (timeline clara)
-7. CTA (Avaliação gratuita)
+1. Hero (`HeroSection`): Apresentação visual e chamada imediata "Seu imóvel merecia estar vendido"
+2. Manifesto (`ManifestoSection`): Por Que Orlando? Empatia + Competência + Transparência
+3. Processo (`ProcessoSection`): 5 Passos demonstrados visualmente
+4. Promessas (`PromiseCardsSection`): Entregáveis e O Que Esperar (metas claras e números de mercado)
+5. Testemunhos (`TestimonialsSection`): Histórias Reais / Testemunhos em texto (baseados no dicionário de dados local)
+6. CTA Final (`CTAFinalSection`): Bloco de conversão focado em Avaliação gratuita
+*(Nota: A Calculadora é tratada como tela/página à parte em `/calculadora`)*
 
 ### /sobre
 **Objetivo**: Humanizar Orlando, mostrar competência, gerar confiança
@@ -173,11 +173,14 @@ Contexto: "Vamos conectar você com a rede de compradores de Orlando"
 
 ## 7. STACK TÉCNICA
 
-### Tecnologias
-- **Framework**: Next.js 14+
+### Tecnologias & Arquitetura
+- **Framework**: Next.js 14+ (App Router)
 - **Linguagem**: TypeScript
 - **Styling**: Tailwind CSS
-- **Components**: Shadcn/ui
+- **Components**: Shadcn/ui (`components/ui`)
+- **Arquitetura de UI**: Baseada em componentes lógicos isolados (`components/sections`)
+- **Gestão de Dados**: Descentralizada e baseada em dicionários isolados (`lib/constants/home-data.ts`) para os textos e loops
+- **Performance**: Orientada a Code-Splitting dinâmico via *Lazy Loading Server-Side* (`next/dynamic`) nas seções abaixo-da-dobra
 - **Hosting**: Vercel (deploy automático)
 - **CMS**: Markdown (futuro: Contentful ou similar)
 
@@ -254,7 +257,6 @@ Contexto: "Vamos conectar você com a rede de compradores de Orlando"
 - ❌ Números inventados (apenas dados reais ou remover)
 - ❌ "Anos de experiência" (Orlando é novo)
 - ❌ Chat ao vivo (futuro)
-- ❌ Testimonials de clientes (ainda não tem) - adicionar quando tiver cases reais
 
 ---
 
